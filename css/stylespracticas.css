@@ -1,0 +1,453 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     
+}
+
+/*Tipo de letra */
+body{
+    font-family: 'Mulish', sans-serif;
+}
+
+/*BARRA DE SCROLL*/
+
+
+
+/*NAVBAR*/
+
+.navbar {
+    padding: 0.25rem;
+    background-color: #00589e;
+}
+
+.navbar-collapse {
+   align-items: center;
+   justify-content: space-between;
+}
+
+@media screen and (max-width: 767px) {
+   .navbar-brand {
+       display: none;
+   }
+   
+}
+.navbar-brand {
+    background-color: white;
+    border-radius:10px;
+}
+
+.logonav {
+    background-color: white;
+    border-radius: 10%;
+    padding: 5px;
+    }
+
+.navbar-nav li a{
+    color: white !important;
+    }
+
+/*CUERPO DE LA PAGINA*/
+
+/*ANIMACION DE ENTRADA*/ 
+/*DEL LOGO (ID)*/
+
+#imagentecno{
+
+    opacity: 0;
+    animation: aparecer 1s forwards;
+}
+
+/* Define la animación para mostrar el formulario */
+
+@keyframes aparecer {
+
+    from{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+}
+
+/*DE LA DESCRIPCION GENERAL Y BOTONES*/
+#desgeneral{
+    opacity: 0;
+    animation: aparecer1 1s forwards;
+}
+@keyframes aparecer1 {
+
+    from{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+}
+
+/*DESCRIPCIONES SECUNDARIAS*/
+
+#informacion{
+    opacity: 0;
+    animation: aparecer2 1s forwards;
+}
+@keyframes aparecer2 {
+
+    from{
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+}
+
+
+
+
+/*TITULO y DESCRIPCIÓN*/
+
+
+.grid-layout{
+    display:grid;
+    width:95%;
+    margin: 3%;
+    position: relative;
+       
+}
+
+
+.titulo{
+    
+    text-align: center;
+    width:fit-content;
+    margin-left: 50%;
+    margin-top: 10%;
+}
+
+.descripción{
+    color:#00589e;
+    text-align:center;
+    width: fit-content;
+    margin-left: 40%;
+    margin-top: 2%;
+    
+
+}
+
+.imagenpracticas{
+   
+    padding: 10px 10px 10px 10px;
+    width: 30%;
+    margin-top: 5%;
+    margin-left: 5%;
+    position: absolute;
+}
+
+.botones{
+    padding: 20px 20px 20px 20px;
+    position: absolute;
+    width: max-content;
+    margin-left: 51%;
+    margin-top: 18%;
+}
+
+.boton:active{
+  letter-spacing: 1px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+}
+.boton{
+        
+        height: 40px;
+        border: 0;
+        background: #00589e;
+        border-radius: 7px;
+        position: relative;
+        width: 200px;
+        font-family: 'Mulish', sans-serif;
+        font-size: 100%;
+        cursor: pointer;
+        color: #FFFF;
+        background-size: 300%;
+        margin-right: 30px;
+        transition: 0.5s;
+        
+        
+}
+
+.boton:hover{
+    background-position: right;
+    
+}
+
+/*Cuerpo*/
+
+.general {
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+}
+
+/*INFO*/
+
+/*CONTENEDOR DE INFORMACIÓN*/
+.info{
+    
+    margin-left: 10%;
+    margin-top: 420px;
+    position: relative;
+    margin-bottom: -5%;
+      
+}
+/*CONTENEDOR DE INFORMACIÓN*/
+
+.titulo1info{
+    color: #00589e;
+    width: fit-content;
+    position: absolute;
+    font-size:20px;
+    margin-top: -7%;
+    
+}
+.descripción1info{
+    position: absolute;
+    margin-top:-4%;
+    font-size: 20px;
+}
+.imginfo{
+    position: absolute;
+    margin-top: -10%;
+    margin-left: -11.5%;
+    width: 8%;
+}
+
+.titulo2info{
+    color: #00589e;
+    width:fit-content;
+    position: absolute;
+    margin-top: -7%;
+    margin-left: 62%;
+    font-size: 20px;
+}
+
+.descripción2info{
+    position: absolute;
+    width:fit-content;
+    margin-left: 62%;
+    margin-top:-4%;
+    font-size: 20px;
+}
+
+.imgreunion{
+    position: absolute;
+    margin-top: -10%;
+    margin-left: 47%;    
+    width: 10%;
+}
+
+/*DISEÑO RESPONSIVE TELEFENOS PROMEDIO*/
+
+@media only screen and (min-width:360px) and (max-width: 767px){
+    /*TITULO Y DESCRIPCION*/
+    .titulo{
+        margin-top: 20%;
+        text-align: center;
+        margin-left: 0%;
+        font-size: 20px;
+        position: relative;
+
+    }
+    .descripción{
+        text-align:center;
+        margin-left: 0%;
+        margin-top: 5%;
+        width: fit-content;
+        font-size: 15px;
+    }
+    .imagenpracticas{
+        position: relative;
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    /*BOTONES*/
+    .botones{
+        
+        position: relative;
+        margin-top: 2%;
+        margin-left: 10%;
+        
+    }
+
+    .boton{
+        width: 110px;
+        height: 50px;
+        font-size: 80%;
+        margin-right: 20px;
+    }
+
+    /*TITULO 1 Y DESCRIPCIÓN */
+
+    .titulo1info{
+        margin-top: -100%;
+        margin-left: 18%;
+        font-size: 18px;
+        
+    }
+    .descripción1info{
+        font-size: 14px;
+        position: absolute;
+        text-align: left;
+        margin-top: -88%;
+        margin-left: 18%;
+        width: fit-content;
+        
+    }
+
+    .imginfo{
+        margin-top: -100%;
+        width: 20%;
+        margin-left: -7%;
+    }
+
+    .titulo2info{
+        margin-top: -60%;
+        margin-left: 18%;
+        font-size: 20px;
+    }
+
+    .descripción2info{
+        font-size: 16px;
+        text-align: left;
+        margin-top: -50%;
+        margin-left: 18%;
+        width: fit-content;
+    }
+    .imgreunion{
+        margin-top: -60%;
+        width: 20%;
+        margin-left: -7%;
+    }
+}
+
+/*DISEÑO RESPONSIVE TABLETS Y DISPOSITIVOS MAS GRANDES*/
+@media only screen and (min-width:768px) and (max-width: 1024px){
+    
+    /*TITULO Y DESCRIPCION*/
+
+    .titulo{
+        margin-left: 10%;
+        font-size: 30px;
+        margin-top: 15%;
+    }
+    .descripción{
+        margin-left: 0%;
+        text-align: center;
+        font-size: 25px;
+    }
+    .imagenpracticas{
+        position: relative;
+        width: 70%;
+        margin-left: 15%;
+    }
+    .botones{
+        position: relative;
+        margin-top: -2%;
+        font-size: 18px;
+        margin-left: 20%;
+    }
+
+    /*INFO 1*/
+
+    .titulo1info{
+        margin-top: -50%;
+        margin-left: 20%;
+    }
+    
+    .descripción1info{
+        margin-left: 20%;
+        margin-top: -45%;
+    }
+    .imginfo{
+        margin-top: -50%;
+        margin-left: 5%;
+        width: 12%;
+    }
+
+    /*INFO 2*/
+    .titulo2info{
+        margin-top:-30%;
+        width: max-content;
+        margin-left: 20%;
+    }
+    .descripción2info{
+        width: fit-content;
+        margin-top:-25%;
+        margin-left: 20%;
+    }
+    .imgreunion{
+        margin-top: -30%;
+        margin-left: 4%;
+    }
+
+}
+
+/*DISEÑO RESPONSIVE PANTALLAS MAS GRANDES(PORTATILES)*/
+
+@media only screen and (min-width:1025px) and (max-width: 1800px){
+
+    /*TITULO 1 Y DESCRIPCIÓN(INCREMENTA TUS CONOCIMIENTOS)*/
+
+    .botones{
+        margin-top:20%;
+    }
+
+
+    .imagenpracticas{
+        margin-top: 5%;
+        width: 35%;
+    }
+
+   
+    .titulo1info{
+        margin-top: -20%;
+    } 
+
+    .descripción1info{
+        width: 45%;
+        margin-top: -16%;
+    }
+    .imginfo{
+        margin-top: -20%;
+    }
+
+    /*TITULO 2 Y DESCRIPCION (DESBLOQUEA CAPACIDADES)*/
+
+    .titulo2info{
+        margin-top: -20%;
+    }
+    .descripción2info{
+        margin-top: -16%;
+    }
+    .imgreunion{
+        margin-top: -20%;
+    }
+
+    
+}
